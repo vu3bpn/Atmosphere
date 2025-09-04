@@ -66,7 +66,7 @@ def update_index_with_links(index_path, sections, html_folder):
                 else:
                     item = stripped.lstrip('-').strip()
                     html_file = clean_html_filename(item)
-                    link = f"[{item}]({os.path.join('output', html_file)})"
+                    link = f"[{item}]({html_file})"
                     new_lines.append(f"- {link}\n")
             else:
                 new_lines.append(line)
@@ -77,6 +77,7 @@ def update_index_with_links(index_path, sections, html_folder):
 if __name__ == '__main__':
     sections = extract_sections(index_file)
     create_md_files(sections, markdown_dir)
-    convert_md_to_html_pandoc(markdown_dir, output_dir)
     update_index_with_links(index_file, sections, output_dir)
+    convert_md_to_html_pandoc(markdown_dir, output_dir)
+    
     print(f"Created {len(sections)} markdown files in {src_dir} and HTML files in {output_dir}, and updated index.md with hyperlinks.")
