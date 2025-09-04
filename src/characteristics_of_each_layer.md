@@ -1,2 +1,0 @@
-## Characteristics of Each Layer
-

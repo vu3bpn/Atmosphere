@@ -1,2 +1,0 @@
-## Boundaries of Each Layer
-

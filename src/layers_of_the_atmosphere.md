@@ -1,2 +1,0 @@
-## Layers of the Atmosphere
-

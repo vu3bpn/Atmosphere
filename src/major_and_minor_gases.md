@@ -1,2 +1,0 @@
-## Major and Minor Gases
-

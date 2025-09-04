@@ -1,2 +1,0 @@
-## Ionization and Aurora Phenomena
-
