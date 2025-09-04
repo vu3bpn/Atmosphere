@@ -77,7 +77,12 @@ def update_index_with_links(index_path, sections, html_folder):
 if __name__ == '__main__':
     sections = extract_sections(index_file)
     create_md_files(sections, markdown_dir)
+<<<<<<< HEAD
     update_index_with_links(index_file, sections, output_dir)
     convert_md_to_html_pandoc(markdown_dir, output_dir)
     
+=======
+    convert_md_to_html_pandoc(markdown_dir, output_dir)
+    update_index_with_links(index_file, sections, output_dir)
+>>>>>>> 7f44ad1... initial commit
     print(f"Created {len(sections)} markdown files in {src_dir} and HTML files in {output_dir}, and updated index.md with hyperlinks.")
